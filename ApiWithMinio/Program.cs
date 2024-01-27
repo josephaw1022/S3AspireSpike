@@ -18,8 +18,8 @@ builder.Services.AddAntiforgery();
 // then needed to run : ```mc admin policy attach myminio readwrite --user newAccessKey12345```
 // so that the new user can read and write to the bucket and is not the root user
 var endpoint = @"localhost";
-var accessKey = @"newAccessKey12345";
-var secretKey = @"newSecretKey54321";
+var accessKey = @"minio";
+var secretKey = @"RunningZebraMan32332#";
 
 builder.Services.AddMinio(configureClient => configureClient
     .WithEndpoint(endpoint, 9000)
