@@ -1,5 +1,3 @@
-using Amazon.S3;
-using Amazon.Runtime;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
@@ -12,8 +10,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-
-
+// IMPORTANT!
+// Decided to use the minio sdk and have everything in the minio api project
+// This project here serves no purpose and you should refer to the ApiWithMinio project for how to interact with minio / s3
 
 
 // Configure AWS S3 to use MinIO
